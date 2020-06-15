@@ -1,9 +1,8 @@
 <h1 align="center">
     <br>
-     🧜‍♀️ Pretty Mermaid
+     Share code
 </h1>
 <h4 align="center">
-  The mermaid live editor
 </h4>
 <p align="center">
     <!-- badges -->
@@ -14,20 +13,14 @@
     <a href="#-license">License</a>
 </p>
 
-<!-- ![screenshot](pretty-mermaid-screenshot.png) -->
-
-⚠️ **Pretty Mermaid is currently a WIP** ⚠️
-
 ## 🛣️ Roadmap
 
 - [x] 🌔 Dark Mode
-- [ ] Export diagram
+- [x] Export diagram
 - [ ] Import diagram
-- [ ] 🎨 Mermaid syntax highlighting
-- [ ] 🔗 Share feature
+- [x] 🔗 URL sharing
 - [x] 🔍 Enhanced viewing for large diagrams
 - [ ] Dashboard to see all saved diagrams _localstorage (?)_
-- [ ] ?
 
 ## 👨‍💻 Contributing
 
@@ -35,5 +28,3 @@ Feel free to send a pull request to this repository with your code contributions
 
 ## 📜 License
 #### [MIT](./LICENSE)
-
-Copyright © 2020 Pretty Mermaid.
