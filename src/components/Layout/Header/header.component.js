@@ -3,10 +3,8 @@ import {
   Flex,
   Text,
   Divider,
-  Badge,
 } from '@chakra-ui/core';
 
-import { Config } from 'src/config';
 import { useWindowSize } from 'src/hooks';
 
 import { ActionButtons } from './action-buttons/action-buttons.component'

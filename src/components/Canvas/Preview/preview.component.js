@@ -1,44 +1,15 @@
 import React, { useState, useEffect } from "react";
 import * as js2flowchart from "js2flowchart";
 // import svgPanZoom from "svg-pan-zoom";
-import { Flex, Text, Alert, AlertIcon } from "@chakra-ui/core";
+import { Flex, Text } from "@chakra-ui/core";
 
-import { ErrorBoundary } from "react-error-boundary";
 import "./preview.styles.scss";
-
-function insertParam(key, value) {
-  key = encodeURIComponent(key);
-  value = encodeURIComponent(value);
-
-  // kvp looks like ['key1=value1', 'key2=value2', ...]
-  var kvp = document.location.search.substr(1).split("&");
-  let i = 0;
-
-  for (; i < kvp.length; i++) {
-    if (kvp[i].startsWith(key + "=")) {
-      let pair = kvp[i].split("=");
-      pair[1] = value;
-      kvp[i] = pair.join("=");
-      break;
-    }
-  }
-
-  if (i >= kvp.length) {
-    kvp[kvp.length] = [key, value].join("=");
-  }
-
-  // can return this or...
-  let params = kvp.join("&");
-
-  // reload page with new params
-  // document.location.replace(params)
-}
 
 const Preview = (props) => {
   const { definition, onError, onErrorFixed, onUpdate, ...rest } = props;
 
   const [currentDefinition, setCurrentDefinition] = useState("");
-  const [updating, setUpdating] = useState(false);
+  // const [updating, setUpdating] = useState(false);
   const [error, setError] = useState("");
 
   const updatePreview = () => {
