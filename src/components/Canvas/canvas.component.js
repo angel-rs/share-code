@@ -88,7 +88,7 @@ const Canvas = () => {
         <AceEditor
           name="editor"
           mode="javascript"
-          placeholder="Here goes your 🧜️ code"
+          placeholder="Here goes your code"
           onChange={onChange}
           value={definition}
           theme={theme}
